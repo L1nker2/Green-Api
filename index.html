@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Green API</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div>
+        <div style="float: left">
+            <div>
+                <label for="apiUrl">apiUrl</label>
+                <input type="text" id="apiUrl" />
+            </div>
+
+            <br />
+
+            <div>
+                <label for="idinstance">idInstance:</label>
+                <input type="text" id="idinstance">
+            </div>
+
+            <br />
+
+            <div>
+                <label for="apitokeninstance">ApiTokenInstance:</label>
+                <input type="text" id="apitokeninstance">
+            </div>
+
+            <br /><br />
+
+            <input type="button" value="getSettings" onclick="getSettings();" />
+
+            <br /><br />
+
+            <input type="button" value="getStateInstance" onclick="getStateInstance();" />
+
+            <br /><br />
+            <br /><br />
+
+            <div>
+                <label for="chatId1">chatId:</label>
+                <input type="text" id="chatId1">
+            </div>
+
+            <br />
+
+            <div>
+                <label for="message">Message:</label>
+                <input type="text" id="message">
+            </div>
+
+            <br /><br />
+
+            <input type="button" value="sendMessage" onclick="sendMessage();" />
+
+            <br /><br />
+            <br /><br />
+
+            <div>
+                <label for="chatId2">chatId:</label>
+                <input type="text" id="chatId2">
+            </div>
+
+            <br />
+
+            <div>
+                <label for="urlFile">URL:</label>
+                <input type="text" id="urlFile">
+            </div>
+
+            <br /><br />
+
+            <input type="button" value="sendFileByUrl" onclick="sendFileByUrl();" />
+
+        </div>
+
+        <div style="float: right; padding-right: 300px;">
+            <h2>Responce</h2>
+            <textarea readonly id="responce" rows="20" cols="60"></textarea>
+        </div>
+    </div>
+</body>
+</html>
